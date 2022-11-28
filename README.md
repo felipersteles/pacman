@@ -1,6 +1,7 @@
 # pacman
 
-Ao som de Pacman - Lucas Lucco
+Ao som de Pacman - Lucas Lucco. <br/>
+Inspirado por https://github.com/servetgulnaroglu
 
 ## Ferramentas utilizadas
 Visual Code Studio <br/>
