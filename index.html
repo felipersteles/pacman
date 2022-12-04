@@ -6,11 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" content="Felipe Teles">
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./style/styles.css">
 
     <title>Pacman</title>
 </head>
 <body>
-    
+    <canvas id="canvas" width="500" height="500"></canvas>
+
+    <div style="display: none;">
+        <img id="animations" src="./assets/animations.gif" alt="nosso héroi">
+        <img id="ghosts" src="./assets/ghost.png" alt="fantasmas">
+    </div>
+
+    <script src="./src/ghost.js"></script>
+    <script src="./src/pacman.js"></script>
+    <script src="./src/game.js"></script>
 </body>
-</html>l
+</html>
