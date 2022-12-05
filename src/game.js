@@ -13,9 +13,14 @@ let fps = 30;
 let tamanhoDoBloco = 20;
 let corDaParede = "#342DCA";
 
-let tamanhaoEspacoDaParede = tamanhoDoBloco / 1.7;
+let tamanhaoEspacoDaParede = tamanhoDoBloco / 1.5;
 let paredeOffset = (tamanhoDoBloco - tamanhaoEspacoDaParede) / 2;
 let corInternaDaParede = "black";
+
+const DIRECTION_RIGHT = 4;
+const DIRECTION_UP = 3;
+const DIRECTION_LEFT = 2;
+const DIRECTION_BOTTOM = 1;
 
 // 21 columns // 23 rows
 // matriz com o mapa
@@ -107,7 +112,7 @@ let drawWalls = () => {
         );
       }
 
-      if (i < map[0].length - 1 && map[i + 1][j] == 1) {
+      if (i < map.length - 1 && map[i + 1][j] == 1) {
         createRect(
           j * tamanhoDoBloco + paredeOffset,
           i * tamanhoDoBloco + paredeOffset,
